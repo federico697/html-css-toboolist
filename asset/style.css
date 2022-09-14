@@ -1,109 +1,141 @@
 *{
     margin: 0;
-    padding: 1px;
+    padding: 0;
     box-sizing: border-box;
 }
 
-#container-logo{
-    margin-bottom: 20px;
-    background-color: rgb(212, 245, 245);
+li{
+    list-style: none;
+    line-height: 30px;
+    padding-top: 10px;
+}
+
+html{
+    font-family: sans-serif;
+}
+
+body{
+    background-color: lightgray;
+}
+
+header{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 25px;
+
 }
 
 #logo{
     vertical-align: middle;
 }
 
-#logo-text{
-    font-size: 50px;
+#logo-testo{
     vertical-align: middle;
-    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-#container-main{
-    margin: 0 auto;
-    margin-top: 30px;
-    width: 1000px;
-    height: 600px;
-    background-color: rgb(212, 245, 245);
+.btn{
+    padding: 8px 4px;
+    border-radius: 10px;
+    border: 0;
+    margin-right: 5px;
 }
 
-#blue-button{
-    margin-top: 25px;
-    margin-left: 100px;
-    padding: 5px;
-    background-color: aqua;
-    border-radius: 80px;
-    width: 100px;
+.box-top{
+    border-bottom: 1px solid black;
 }
 
-#white-button{
-    padding: 5px;
-    background-color: beige;
-    border-radius: 15px;
-    width: 100px;
+.p-xl{
+    padding: 20px 30px;
 }
- h2{
-    margin-top: 50px;
-    margin-left: 100px;
- }
- .spunta{
-    border: 1px solid green;
+
+
+.btn-attivo{
+    background-color: #14AAF5;
+    color: white;
+}
+
+.btn-disabilitato{
+    background-color: lightgrey;
+    border: 1px solid gray;
+}
+
+.list-title::before{
+    content: '\25bc';
+}
+
+.under-list li::before{
+    width: 25px;
+    height: 25px;
+    
     border-radius: 50%;
-    padding: 2px;
+}
+
+.under-list li::after{
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.check::before{
+    content: '\2714';
     color: green;
-    text-align: center;
-    margin-top: 25px;
-    margin-left: 100px;
- }
-
- #editorial{
-    padding: 5px;
-    background-color: aqua;
-    border-radius: 80px;
-    width: 100px;
- }
-
- .croce{
-    border: 1px solid red;
+    border: 1px solid green;
+    margin-right: 5px;
     border-radius: 50%;
-    padding: 2px;
+    padding: 5px;
+}
+
+.cross::before{
+    content: '\2716';
     color: red;
-    text-align: center;
-    margin-top: 25px;
-    margin-left: 100px;
- }
-
- #purple{
-    background-color: purple;
+    border: 1px solid red;
+    margin-right: 5px;
+    border-radius: 50%;
     padding: 5px;
-    border-radius: 80px;
-    width: 100px;
- }
+}
 
- #green{
-    background-color: green;
-    padding: 5px;
-    border-radius: 80px;
-    width: 100px;
- }
+.editorial::after{
+    background-color: #14AAF5;
+    color: white;
+    content: 'Editorial';
+    margin-left: 5px;
+}
 
- #orange{
+.mobile::after{
     background-color: orange;
-    padding: 5px;
-    border-radius: 80px;
-    width: 100px;
- }
- 
- #pink{
+    color: white;
+    content: 'mobile'; 
+    margin-left: 5px;
+}
+.q1-goals::after{
+    background-color: blue;
+    color: white;
+    content: 'Q1-goals';
+    margin-left: 5px; 
+}
+.recruiting::after{
     background-color: pink;
-    padding: 5px;
-    border-radius: 80px;
-    width: 100px;
- }
-
-#yellow{
-    background-color: yellow;
-    padding: 5px;
-    border-radius: 80px;
-    width: 100px;
+    color: white;
+    content: 'recruiting';
+    margin-left: 5px; 
+}
+.website::after{
+    background-color:red;
+    color: white;
+    content: 'website';
+    margin-left: 5px; 
+}
+.sales::after{
+    background-color: rgb(0, 255, 0);
+    color: white;
+    content: 'sales';
+    margin-left: 5px; 
 }

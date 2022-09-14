@@ -5,34 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="asset/style.css">
+    <link rel="stylesheet" href="asset/css/style.css">
 </head>
 <body>
     <header>
-        <div id="container-logo">
-            <img id="logo" src="asset/img/logo copia.png" alt="logo di boolean">
-            <span id="logo-text">Toboolist</span>
-        </div>
+        <img id="logo" src="asset/img/Logo.png" alt="logo">
+        <span id="logo-testo" >Toboolist</span>
     </header>
-    <!-- inizio del main -->
+
     <main>
-        <div id="container-main">
-            <div>
-                <button id="blue-button">Add Task</button>
-                <button id="white-button">Add Section</button>
-            </div>
-            <h2> &#9660; New Task</h2>
-            <div > <span class="spunta"> &#10003 </span> Quarterly Newsletter <button id="editorial">Editorial</button> </div>
-            <h2> &#9660; Today</h2>
-            <div > <span class="spunta"> &#10003 </span> Recruiting blog post <button id="editorial">Editorial</button> </div>
-            <div > <span class="spunta"> &#10003 </span> Mobile app luaunch <button id="purple">Q1 goals</button> </div>
-            <div > <span class="croce"> &#215; </span> Interview John. H <button id="green">Recruiting</button> </div>
-            <div > <span class="spunta"> &#10003 </span> Summit update to mobile storefronts <button id="orange">Mobile</button> </div>
-            <h2> &#9660; Upcoming</h2>
-            <div > <span class="croce"> &#215; </span> Schedule meeting whit Alex  </div>
-            <div > <span class="spunta"> &#10003 </span> Homepage refresh <button id="pink">Website</button> </div>
-            <div > <span class="spunta"> &#10003 </span> Onboard new sales team members <button id="yellow">Sales</button> </div>
-            <div > <span class="spunta"> &#10003 </span> Review editorial calendar <button id="editorial">Editorial</button> </div>
+        <div class="box-top p-xl">
+            <button class="btn btn-attivo" >Add Task</button>
+            <button class="btn btn-disabilitato" >Add Section</button>
+        </div>
+        <div class="p-xl">
+            <ul>
+                <li>
+                    <h2 class="list-title">New Task</h2>
+                    <ul class="under-list">
+                        <li class="check editorial">lorem ipsum dolor</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h2 class="list-title">Today</h2>
+                    <ul class="under-list">
+                        <li class="check editorial ">lorem ipsum dolor</li>
+                        <li class="check q1-goals">lorem ipsum dolor</li>
+                        <li class="cross recruiting">lorem ipsum dolor</li>
+                        <li class="check mobile">lorem ipsum dolor</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h2 class="list-title">Upcoming</h2>
+                    <ul class="under-list">
+                        <li class="cross">lorem ipsum dolor</li>
+                        <li class="check website">lorem ipsum dolor</li>
+                        <li class="check sales">lorem ipsum dolor</li>
+                        <li class="check editorial">lorem ipsum dolor</li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </main>
 </body>
